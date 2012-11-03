@@ -44,10 +44,10 @@ app.AppView = Backbone.View.extend({
         } else {
           for (var i = currIndex; i < origIndex; i++)
           {
-            console.log(app.Todos.at(i).get('title') + ' ' + (i + 2));
             app.Todos.at(i).save({order: i + 2});
           }
         }
+        app.Todos.fetch();
       }
     });
 
