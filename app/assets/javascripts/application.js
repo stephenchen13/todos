@@ -13,3 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui-1.9.1.custom.js
+//= require jquery.ui.touch-punch.min.js
