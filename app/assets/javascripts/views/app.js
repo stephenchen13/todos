@@ -33,16 +33,20 @@ app.AppView = Backbone.View.extend({
       update: function(event, ui) {
         var model = window.app.Todos.at(origIndex);
         var currIndex = ui.item.index();
+        var lastIndex = window.app.Todos.length - 1;
 
         model.save({order: currIndex + 1});
         if (origIndex < currIndex) {
+          console.log('down');
           for(var i = origIndex + 1; i <= currIndex; i++)
           {
             app.Todos.at(i).save({order: i});
           }
         } else {
+          console.log('up');
           for (var i = currIndex; i < origIndex; i++)
           {
+            console.log(app.Todos.at(i).get('title') + ' ' + (i + 2));
             app.Todos.at(i).save({order: i + 2});
           }
         }
