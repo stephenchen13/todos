@@ -56,6 +56,7 @@ app.TaskView = Backbone.View.extend({
 
   // Switch this view into 'editing' mode, displaying the input field.
   edit: function() {
+    alert('edit');
     this.$el.addClass('editing');
     this.input.focus();
   },
