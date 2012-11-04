@@ -15,3 +15,4 @@
 //= require jquery-ui-1.9.1.custom.js
 //= require jquery.ui.touch-punch.min.js
 //= require jquery.mobile-1.2.0.min.js
+//= require jquery.doubletap.js

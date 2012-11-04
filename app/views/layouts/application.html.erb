@@ -7,9 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div data-role="page">
+  <div data-role="header"></div>
 <%= yield %>
-
+  <div data-role="footer"></div>
+</div>
   <%= javascript_include_tag "todolist" %>
 </body>
 </html>

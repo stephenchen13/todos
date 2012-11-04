@@ -12,6 +12,7 @@ app.TaskView = Backbone.View.extend({
   events: {
     'click .toggle': 'togglecompleted',
     'dblclick label': 'edit',
+    'doubletap label': 'edit',
     'click .destroy': 'clear',
     'keypress .edit': 'updateOnEnter',
     'blur .edit': 'close'
@@ -56,7 +57,6 @@ app.TaskView = Backbone.View.extend({
 
   // Switch this view into 'editing' mode, displaying the input field.
   edit: function() {
-    alert('edit');
     this.$el.addClass('editing');
     this.input.focus();
   },
