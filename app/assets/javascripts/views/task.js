@@ -58,7 +58,7 @@ app.TaskView = Backbone.View.extend({
   // Switch this view into 'editing' mode, displaying the input field.
   edit: function() {
     this.$el.addClass('editing');
-    this.input.focus();
+    this.input.focus().select();
   },
 
   // Close the 'editing' mode, saving changes to the todo.
