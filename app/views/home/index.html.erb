@@ -2,7 +2,7 @@
 <section id="todoapp">
   <header id="header">
     <h1>todos</h1>
-    <input id="new-todo" placeholder="What needs to be done?" autofocus>
+    <input id="new-todo" type="text" placeholder="What needs to be done?" autofocus>
   </header>
   <section id="main">
     <input id="toggle-all" type="checkbox">
@@ -21,7 +21,7 @@
     <label><%%- title %></label>
     <button class="destroy"></button>
   </div>
-  <input class="edit" value="<%%- title %>">
+  <input type="text" class="edit" value="<%%- title %>">
 </script>
 
 <script type="text/template" id="stats-template">
